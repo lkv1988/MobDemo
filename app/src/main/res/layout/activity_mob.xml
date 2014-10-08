@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:stretchColumns="*"
+    android:layout_margin="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableRow>
+        <EditText
+            android:id="@+id/phone"
+            android:inputType="phone"
+            android:hint="input phone number" />
+        <Button
+            android:id="@+id/verify"
+            android:text="Verify" />
+    </TableRow>
+
+    <TableRow>
+        <EditText
+            android:id="@+id/code"
+            android:inputType="number"
+            android:hint="input the verify code" />
+        <Button
+            android:id="@+id/submit"
+            android:text="Submit" />
+    </TableRow>
+
+    <TextView
+        android:id="@+id/result"
+        android:background="#212121"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        style="@android:style/TextAppearance.Holo.Large.Inverse"
+        android:text="Result" />
+</TableLayout>
